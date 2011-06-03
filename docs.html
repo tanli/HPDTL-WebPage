@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Rperf over RDMA, Infiniband, iWarp</title>
+	</head>
+
+<BODY bgcolor="#ffffff" text="#000000" LINK="#0000ff" VLINK="#808080" ALINK="red">
+<!-- first-line-in-body -->
+<table width="100%"><tr valign="top"><td align="right"> <a href="http://hpdtl.cewit.stonybrook.edu/rperf/"><img border="0" src="http://hpdtl.cewit.stonybrook.edu/rperf/lab.png"
+width="181" height="36" alt="hpdtl"></a></td>
+</table>
+
+<table cellspacing="0" cellpadding="5"><tr><td valign="top" align="left">
+
+<div class="mainmenu">
+<div><a href="http://hpdtl.cewit.stonybrook.edu/rperf/" class="menuitem" title="rperf site front page">Main Page</a></div>
+<div><a href="http://hpdtl.cewit.stonybrook.edu/rperf/download.html" class="menuitem" title="Get rperf packages">Download</a></div>
+<div><a href="http://hpdtl.cewit.stonybrook.edu/rperf/changes.html" class="menuitem" title="The changes done in releases">Changelog</a></div>
+<div class="itemselect">Docs</a></div>
+<div><a href="http://hpdtl.cewit.stonybrook.edu/rperf/support.html" class="menuitem" title="Get support">Support</a></div>
+
+<td valign="top" align="left" width="100%">
+<a href="http://hpdtl.cewit.stonybrook.edu/rperf/">rperf </a>-> <b>Documentation</b>
+<h1 class="pagetitle"> Documentation </h1>
+<h2> Usage Extention </h2>
+<p>
+  # rperf -h
+<p>
+-G, --rdma_style[ar/aw/pr/pw] RDMA with active/passive read/write mode
+<p>
+-H, --rdma RDMA bw test
+<p>
+-l, --len stards for length of buffer to read or write in TCP mode, and for size of RDMA operation block in RDMA mode.
+
+<h2> Example </h2>
+<p>
+RDMA Server:
+<p># rperf -s -p [listening port] -l 10M -H
+<p>
+This will lanuch an RDMA server which will accept 10MB rdma bulk data once at most.
+<p>
+RDMA_READ Client:<p>
+# rperf -c [ip addr] -p [port] -H -G pw -l 1M -i 2 -t 100
+<p>
+This will lanuch an RDMA client which will RDMA_WRITE 1MB bulk data at one time, and last for 100 second.
+<p>
+RDMA_WRITE Client:<p>
+# rperf -c [ip addr] -p [port] -H -G pr -l 1M -i 2 -t 100
+
+<h2> Report Format </h2>
+<p>[ ID] Interval Transfer Bandwidth
+<p>
+[ 4] 0.0- 2.0 sec 4.47 GBytes 19.2 Gbits/sec
+<p>
+[ 4] 2.0- 4.0 sec 3.47 GBytes 14.9 Gbits/sec
+<p>
+
+
+</td>
+</table>
+<hr />
+<p></p>
+<center>
+If you have any problem, please contact renyufei83 at gmail.com
+</center>
+
+</BODY>
+
+</html>

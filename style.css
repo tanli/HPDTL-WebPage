@@ -1,0 +1,391 @@
+BODY {
+  background-color: white; 
+  font-family: arial, helvetica, ariel, sans-serif;
+  font-size: 90%;
+  color: black;
+}
+
+/* the curl-style blue main page titles */
+.pagetitle, h1.libtitle, .newstitle {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+
+  background-color: #e0e0ff; 
+  font-family: arial, helvetica, ariel, sans-serif;
+  color: #0000ff;
+
+  font-size: 150%;
+  font-weight: bold;
+  padding: 0px 4px 0px 4px;
+}
+
+.title {
+  color: #000000;
+  background-color: #f0f0ff; 
+  font-family: arial, helvetica, ariel, sans-serif;
+  font-size: 120%;
+}
+
+h2 {
+  font-family: arial, helvetica, ariel, sans-serif;
+  background-color: #f0f0ff;
+}
+
+.subtitle {
+  font-weight: bold;
+}
+
+tr.tabletop {
+  font-size: 120%;
+  font-family: sans-serif;
+  color: #ffffff;
+  background-color: #0000ff;
+}
+
+.tabletop a {
+  color: #ffffff;
+}
+
+.buildfail {
+  color: #000000;
+  background-color: #ff8080;
+}
+
+.buildserverprob {
+  color: #000000;
+  background-color: #ffff00;
+}
+
+.buildfine {
+  color: #000000;
+  background-color: #00ff00;
+}
+
+.compile, .changetable {
+  border: outset 2px #ffffff;
+}
+
+table.news {
+  border: outset 2px #8080ff;
+}
+
+table.secbox {
+  border: outset 2px #8080ff;
+  background-color: #e0e0ff;
+}
+
+table.latestmail {
+  border: outset 2px #8080ff;
+  font-size: 100%;
+}
+
+/*
+.newstitle {
+  font-size: 120%;
+  white-space: nowrap;
+  background-color: #0000ff;
+  color: #ffffff;
+}
+
+*/
+td.newsdate {
+  text-align: right;
+}
+
+.mini {
+  font-size: 8pt;
+  font-family: monospace;
+}
+
+.warning {
+  font-size: 9pt;
+  color: #000000;
+  background-color: #ff8080;
+}
+
+/* like used for important news items */
+.alert {
+  font-size: 120%;
+  color: #ffffff;
+  background-color: #f00000;
+  padding: 4px 4px 4px 4px;
+}
+
+/* the one in the download database */
+td.desc {
+  color: #000000;
+  background: #e0e0ff;
+}
+
+/* used in the download table for a single OS */
+.ostitleleft {
+  color: #000000;
+  background-color: #ffffff; 
+  font-family: arial, helvetica, ariel, sans-serif;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 4px 4px 4px 4px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: none;
+}
+.ostitleright {
+  color: #000000;
+  background-color: #ffffff; 
+  font-family: arial, helvetica, ariel, sans-serif;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 4px 4px 4px 4px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: none;
+}
+td.ostitle {
+  color: #000000;
+  background-color: #ffffff; 
+  font-family: arial, helvetica, ariel, sans-serif;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 4px 4px 4px 4px;
+  margin: 0px 0px 0px 0px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+/* download page */
+.latest2 {
+  color: #000000;
+  background-color: #ffff44;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin: 0px 0px 0px 0px;
+  padding: 1px 0px 1px 0px;
+}
+/* download page */
+.older2 {
+  color: #000000;
+  background-color: #ffffff;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin: 0px 0px 0px 0px;
+  padding: 1px 0px 1px 0px;
+}
+
+.col1 {
+  border-left: 1px solid black;
+  margin: 0px 0px 0px 0px;
+  border-bottom: none;
+  border-top: none;
+}
+
+.col7 {
+  margin: 0px 0px 0px 0px;
+  border-right: 1px solid black;
+  border-bottom: none;
+  border-top: none;
+}
+
+.col2, .col3, .col4, .col5, .col6 {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 4px 0px 4px;
+}
+
+.osend {
+  border-top: 1px solid black;
+  margin: 0px 0px 10px 0px;
+}
+
+.download2 {
+  background-color: #e0e0e0;
+  padding: 10px 10px 10px 10px;
+}
+
+/* used on the version number lines in the verdiff.cgi script */
+span.version {
+  font-weight: bold;
+  font-size: 120%;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  padding: 4px 4px 4px 4px;
+}
+
+/* used on the who/date lines in the verdiff.cgi script */
+span.whodate {
+  font-weight: bold;
+}
+
+tr.odd {
+  color: #000000;
+  background-color: #e0e0e0;
+}
+
+/* used for Metalink download links */
+span.metalink {
+  font-weight: bold;
+  font-family: helvetica narrow, arial narrow, sans-serif;
+}
+
+/* a non-selected item in the main menu */
+.menuitem, .libitem {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #4040ff;
+  white-space: nowrap;
+  padding: 0px 0px 0px 0px;
+  font-family: sans-serif;
+}
+
+/* a non-selected item in the main menu, with the mouse hovering */
+.menuitem:hover, .libitem:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #202080;
+  white-space: nowrap;
+  padding: 0px 0px 0px 0px;
+  font-family: sans-serif;
+}
+
+/* a selected item in the main menu */
+.itemselect, .libselect {
+  font-family: sans-serif;
+  text-decoration: none;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+  padding: 0px 2px 0px 2px;
+}
+
+/* the main curl site left-side menu box */
+.mainmenu, .libmenu {
+  color: #ffffff;
+  background-color: #4040ff;
+  padding: 8px 4px 8px 2px;
+}
+
+/* the about infobox in the right-bottom */
+.aboutbox {
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #e0e0ff;
+  color: #000000;
+  font-size: 80%;
+  float: right;
+  text-align: left;
+  width: 15em;
+  padding: 2px 2px 2px 2px;
+}
+
+/* the toplevel centered links */
+.ad a {
+  border-color: #c0c0ff;
+  border-style: outset;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #4040ff;
+  margin: 0px 8px 0px 8px;
+  padding: 0px 3px 0px 3px;
+}
+
+.relatedbox {
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  color: #000000;
+  float: right;
+  text-align: left;
+  padding: 2px 2px 2px 2px;
+  margin: 4px 4px 4px 4px;
+  background: white;
+}
+
+div.oslinks {
+  clear: right;
+  border-color: black;
+  border-width: 1px;
+  border-style: outset;
+  color: #000000;
+  float: right;
+  text-align: right;
+  padding: 2px 2px 2px 2px;
+  background: white;
+  font-size: 80%;
+}
+
+
+div.pollbox {
+  border-color: black;
+  border-width: 2px;
+  border-style: outset;
+  font-size: 80%;
+  color: #000000;
+  float: right;
+  text-align: left;
+  padding: 0px 2px 0px 2px;
+  background: #ffffe0;
+}
+
+p.ingres {
+  width: 80%;
+  font-family: arial, helvetica, ariel, sans-serif;
+  font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.quote {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  padding: 2px 2px 2px 2px;
+
+  background-color: #f0f0ff; 
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* yellow box */
+div.yellowbox {
+  border-style: outset;
+  border-width: 3px;
+  border-color: black;
+  padding: 2px 2px 2px 2px;
+
+  background-color: #fffff0; 
+/*
+  width: 90%;
+  margin-left: 5%; */
+}
+
+.mirrorlinks {
+  font-size: 8pt;
+}
+
+.phpbox {
+  background-color: #ffe0e0; 
+  color: #0000ff;
+  border: solid 1px #000000;
+  padding: 4px 4px 4px 4px;
+  font-size: 120%;
+}
+
+.bindingbox {
+  float: right;
+  border: solid 1px #000000;
+  background-color: #ffffff; 
+  padding: 2px 2px 2px 2px;
+}
+
+.bottomad {
+  border: solid 1px #000000;
+  background-color: #e0e0e0; 
+  padding: 5px 5px 5px 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
